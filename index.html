@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Trivia Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sports Trivia Challenge</h1>
+        
+        <div id="category-selection">
+            <h2>Select a Category:</h2>
+            <div class="category-select">
+                <button class="category-btn" data-category="football">⚽ Football</button>
+                <button class="category-btn" data-category="basketball">🏀 Basketball</button>
+                <button class="category-btn" data-category="tennis">🎾 Tennis</button>
+                <button class="category-btn" data-category="olympics">🏅 Olympics</button>
+            </div>
+        </div>
+        
+        <div id="game-area">
+            <div class="progress" id="progress">Question 1 of 5</div>
+            <div class="question-container" id="question-container">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+                <button class="next-btn" id="next-btn" disabled>Next Question</button>
+            </div>
+        </div>
+        
+        <div class="scoreboard" id="scoreboard">
+            <div class="score-title">Game Over!</div>
+            <div class="final-score" id="final-score">Your Score: 0/5</div>
+            <button class="restart-btn" id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
